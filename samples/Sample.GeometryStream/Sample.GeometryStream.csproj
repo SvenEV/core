@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net451</TargetFramework>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
     <AssemblyName>Sample.GeometryStream</AssemblyName>
     <OutputType>Exe</OutputType>
     <PackageId>Sample.GeometryStream</PackageId>
@@ -20,16 +20,6 @@
     <PackageReference Include="NetTopologySuite" Version="1.14.0" />
     <PackageReference Include="NetTopologySuite.IO.GeoJSON" Version="1.14.0" />
     <PackageReference Include="Newtonsoft.Json" Version="9.0.1" />
-  </ItemGroup>
-
-  <ItemGroup Condition=" '$(TargetFramework)' == 'net451' ">
-    <Reference Include="System.Xml" />
-    <Reference Include="System" />
-    <Reference Include="Microsoft.CSharp" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Reference Include="System.Net.Http" />
   </ItemGroup>
 
 </Project>
